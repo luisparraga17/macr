@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soluciones Constructivas</title>
+    <!-- Enlace a Font Awesome para los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @keyframes moveText {
+            0% { left: 0; }
+            100% { left: 100%; }
+        }
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+        header {
+            background-color: #dba135;
+            color: rgb(14, 15, 15);
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #dba135;
+            color: black;
+        }
+        .carousel {
+            width: 100%;
+            height: 500px;
+            overflow: hidden;
+            position: relative;
+        }
+        .slides {
+            display: flex;
+            width: 300%;
+            height: 100%;
+            animation: slide 50s infinite;
+        }
+        .slides img {
+            width: 100%;
+            height: 100%;
+        }
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            33% { transform: translateX(-100%); }
+            66% { transform: translateX(-200%); }
+            100% { transform: translateX(0); }
+        }
+        section {
+            background-color: #df8f28;
+            padding: 20px;
+            text-align: center;
+            border-radius: 15px;
+            border: 2px solid black;
+            margin: 20px;
+            transition: transform 0.3s;
+        }
+        .quienes, .porque, .agenda, .calculadora {
+            padding: 20px;
+            text-align: center;
+        }
+        section:hover {
+            transform: scale(1.02);
+        }
+        nav {
+            text-align: center;
+            margin: 0 auto;
+            background-color: #333232;
+            border: 2px solid black;
+        }
+        h1, h2 {
+            color: #fcfafa;
+            text-shadow: 2px 2px 0px #000,
+            -2px -2px 0px #000,
+            -2px 2px 0px #000,
+            2px -2px 0px #000;
+        }
+        #volver {
+            background-color: #df8f28;
+            color: rgb(248, 247, 247);
+            border: none;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease, transform 0.1s ease;
+        }
+        .video-container {
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .content {
+            display: flex;
+            justify-content: center; /* Centra las columnas */
+            padding: 20px;
+        }
+        .text-column, .video-column {
+            background-color: rgb(77, 55, 14);
+            border-radius: 15px;
+            padding: 20px;
+            width: 40%; /* Ajusta el ancho de cada columna */
+            margin: 10px; /* Espacio entre columnas */
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+        iframe {
+            max-width: 100%; /* Se ajusta al ancho del contenedor */
+            height: 250px; /* Altura automática para mantener proporciones */
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header class="menu" id="menu">
+        <h1>Bienvenidos a Soluciones Constructivas</h1>
+        <nav>
+            <a href="#quienes">Quiénes somos</a>
+            <a href="#porque">Por qué elegirnos</a>
+            <a href="#agenda">Agenda tu cita</a>
+            <a href="#calculadora">Calculadora descargable</a>
+            <a href="https://www.whatsapp.com" target="_blank" title="WhatsApp">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+            <a href="https://www.facebook.com" target="_blank" title="Facebook">
+                <i class="fab fa-facebook"></i> Facebook
+            </a>
+            <a href="https://www.tiktok.com" target="_blank" title="TikTok">
+                <i class="fab fa-tiktok"></i> TikTok
+            </a>
+        </nav>
+    </header>
+
+    <!-- Carrusel de imágenes -->
+    <div class="carousel">
+        <div class="slides">
+            <img src="C:\Users\59175\Downloads\WhatsApp Image 2024-10-01 at 12.36.16 AM.jpeg" alt="imagen 1">
+            <img src="https://constructivo.com/imgPosts/1593594757Pg12h9x9.jpg" alt="imagen 2">
+            <img src="https://www.bancolombia.com/wcm/connect/5c96ef69-9024-4952-ba8e-53a43037d1bb/tendencias-tecnologicas-sector-construccion.jpg?MOD=AJPERES" alt="imagen 3">
+            <img src="https://trafficlogix.mx/wp-content/uploads/2019/04/D%C3%ADa-Mundial-de-la-Seguridad-y-la-Salud-en-el-Trabajo-Main-1024x512.png" alt="imagen 4">
+            <img src="https://constructivo.com/imgPosts/1686843540T7wWBuQN.jpg" alt="imagen 5">
+            <img src="https://img.freepik.com/fotos-premium/grupo-trabajadores-construccion-uniforme_132358-21333.jpg" alt="imagen 6">
+        </div>
+    </div>
+
+    <!-- Sección "Quiénes somos" -->
+    <section id="quienes" class="quienes">
+        <h2>Quiénes somos</h2>
+        <div class="content">
+            <div class="text-column">
+                <p>Somos una empresa constructora con amplia experiencia en el desarrollo de proyectos de infraestructura, edificación residencial, comercial e industrial. Nos especializamos en ofrecer soluciones integrales desde la planificación y diseño. Nuestro equipo está conformado por profesionales altamente capacitados que garantizan la calidad, seguridad y cumplimiento de los plazos en cada obra. Nos distinguimos por nuestro compromiso con la innovación, la sostenibilidad y la satisfacción de nuestros clientes.</p>
+            </div>
+            <div class="video-column">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/fxxX6VwKwk8?si=_h6ABuSbWCO7wLo8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <br>
+                <a id="volver" href="#menu">Menú</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección "Por qué elegirnos" -->
+    <section id="porque" class="porque">
+        <h2>Por qué elegirnos</h2>
+        <div class="content">
+            <div class="text-column">
+                <p>Nos distinguimos por nuestro compromiso con la innovación, la sostenibilidad y la satisfacción de nuestros clientes. Garantizamos calidad, seguridad y cumplimiento en cada proyecto.</p>
+            </div>
+            <div class="video-column">
+                <iframe src="https://es.wikipedia.org/wiki/Construcci%C3%B3n" title="Wikipedia sobre Construcción"></iframe>
+                <a id="volver" href="#menu">Menú</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección "Agenda tu cita" -->
+    <section id="agenda" class="agenda">
+        <h2>Agenda tu cita</h2>
+        <div class="content">
+            <div class="text-column">
+                <p>Agenda tu cita con nuestros expertos para discutir tu próximo proyecto de construcción.</p>
+            </div>
+            <div class="video-column">
+                <iframe src="https://docs.google.com/spreadsheets/d/1J64mcUv03BpAQPvhOtHIUSwal5RsOiRNcJue7LQt6Vs/edit?usp=sharing" title="Google Sheets"></iframe>
+                <a id="volver" href="#menu">Menú</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección "Calculadora descargable" -->
+    <section id="calculadora" class="calculadora">
+        <h2>Calculadora descargable</h2>
+        <div class="content">
+            <div class="text-column">
+                <p>Descarga nuestra calculadora para estimar los costos de tu proyecto de construcción.</p>
+            </div>
+            <div class="video-column">
+                       <a id="volver" href="#menu">Menú</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <a href="https://www.whatsapp.com" target="_blank" title="WhatsApp">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+        <a href="https://www.facebook.com" target="_blank" title="Facebook">
+            <i class="fab fa-facebook"></i> Facebook
+        </a>
+        <a href="https://www.tiktok.com" target="_blank" title="TikTok">
+            <i class="fab fa-tiktok"></i> TikTok
+        </a>
+
+        <p>&copy; 2024 Soluciones Constructivas. derechos reservados por Luis Parraga Huanca</p>
+    </footer>
+</body>
+</html>
